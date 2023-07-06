@@ -9,7 +9,7 @@ spring:
         git:
           uri: https://github.com/WilliamMartinBV94/PROYECTO_SEMANA_4_BC43.git
           searchPaths: config-data
-          default-label: "master"
+          default-label: "main"
   security:
     user:
       name: nttdata
