@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: client_microservice
+          uri: lb://client_microservice
+          predicates:
+            - Path=/clients/**
+        - id: bankingProduct_microservice
+          uri: lb://bankingProduct_microservice
+          predicates:
+            - Path=/banking-products/**
+        - id: transaction_microservice
+          uri: lb://transaction_microservice
+          predicates:
+            - Path=/transactions/**
+        - id: report_microservice
+          uri: lb://report_microservice
+          predicates:
+            - Path=/reports/**
