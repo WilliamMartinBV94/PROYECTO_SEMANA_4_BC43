@@ -3,7 +3,6 @@ import com.nttdata.com.client_microservice.model.Account;
 import com.nttdata.com.client_microservice.model.Client;
 import com.nttdata.com.client_microservice.model.CreditProduct;
 import com.nttdata.com.client_microservice.model.Transaction;
-import io.reactivex.rxjava3.core.*;
 import reactor.core.publisher.*;
 
 public interface ClientService {

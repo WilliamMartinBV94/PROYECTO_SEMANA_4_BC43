@@ -6,7 +6,6 @@ import com.nttdata.com.client_microservice.model.Client;
 import com.nttdata.com.client_microservice.model.CreditProduct;
 import com.nttdata.com.client_microservice.model.Transaction;
 import com.nttdata.com.client_microservice.service.ClientService;
-import io.reactivex.rxjava3.core.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
